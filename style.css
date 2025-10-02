@@ -285,4 +285,47 @@ nav ul li a:hover {
   }
 }
 
+/* Navbar Styling */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;                 /* slim navbar */
+  background: rgba(0, 0, 0, 0.85); /* solid dark with slight transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;                /* keeps it on top */
+  backdrop-filter: none;        /* remove blur */
+}
+
+/* Navbar Links */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f39c12; /* hover effect (orange highlight) */
+}
+
+/* Active link (Home, About, etc.) */
+nav ul li a.active {
+  color: #f39c12;
+  font-weight: bold;
+}
+
    
+
